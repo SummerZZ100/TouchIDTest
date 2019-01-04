@@ -1,38 +1,24 @@
-//
-//  TouchIDViewController.m
-//  TouchIDTest
-//
-//  Created by ZhangXiaosong on 2019/1/4.
-//  Copyright © 2019 ZhanXiaosong. All rights reserved.
-//
+### iOS TouchID & FaceID
+#### [官方文档](https://developer.apple.com/documentation/localauthentication?language=objc)
 
-#import "TouchIDViewController.h"
-#import <LocalAuthentication/LAContext.h>
+1. 开启权限
+   在info.plist中设置 ``` Privacy - Face ID Usage Description ```.开启FaceID权限
 
-@interface TouchIDViewController ()
+2. 引入框架
 
-@end
+   ``` #import <LocalAuthentication/LAContext.h> ```
 
-@implementation TouchIDViewController
+3. 验证方式
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-}
+   ``` LAPolicyDeviceOwnerAuthenticationWithBiometrics ``` (只有TouchID/FaceID验证功能)
+   
+   ``` LAPolicyDeviceOwnerAuthentication ``` (包含TouchID/FaceID/密码输入，验证功能)
+   
+4. 主要代码
 
-/*
-#pragma mark - Navigation
+```
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-- (IBAction)startTouchIDTest:(id)sender
-{
-    LAContext *context = [[LAContext alloc] init];
+LAContext *context = [[LAContext alloc] init];
     context.localizedFallbackTitle = @"输入密码";
     
     NSError *error = nil;
@@ -116,7 +102,5 @@
     else{
         NSLog(@"当前设备不支持TouchID或FaceID验证");
     }
-    
-}
 
-@end
+```

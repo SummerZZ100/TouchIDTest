@@ -13,8 +13,6 @@
 		A1EC868821DF081C00F34033 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1EC868721DF081C00F34033 /* Assets.xcassets */; };
 		A1EC868B21DF081C00F34033 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1EC868921DF081C00F34033 /* LaunchScreen.storyboard */; };
 		A1EC868E21DF081C00F34033 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EC868D21DF081C00F34033 /* main.m */; };
-		A1EC869B21DF098000F34033 /* TouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EC869921DF098000F34033 /* TouchIDViewController.m */; };
-		A1EC869C21DF098000F34033 /* TouchIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1EC869A21DF098000F34033 /* TouchIDViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,9 +26,6 @@
 		A1EC868A21DF081C00F34033 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1EC868C21DF081C00F34033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1EC868D21DF081C00F34033 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A1EC869821DF098000F34033 /* TouchIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchIDViewController.h; sourceTree = "<group>"; };
-		A1EC869921DF098000F34033 /* TouchIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchIDViewController.m; sourceTree = "<group>"; };
-		A1EC869A21DF098000F34033 /* TouchIDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TouchIDViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +58,6 @@
 		A1EC867D21DF081900F34033 /* TouchIDTest */ = {
 			isa = PBXGroup;
 			children = (
-				A1EC869721DF096800F34033 /* TouchID */,
 				A1EC867E21DF081900F34033 /* AppDelegate.h */,
 				A1EC867F21DF081900F34033 /* AppDelegate.m */,
 				A1EC868121DF081900F34033 /* ViewController.h */,
@@ -75,16 +69,6 @@
 				A1EC868D21DF081C00F34033 /* main.m */,
 			);
 			path = TouchIDTest;
-			sourceTree = "<group>";
-		};
-		A1EC869721DF096800F34033 /* TouchID */ = {
-			isa = PBXGroup;
-			children = (
-				A1EC869821DF098000F34033 /* TouchIDViewController.h */,
-				A1EC869921DF098000F34033 /* TouchIDViewController.m */,
-				A1EC869A21DF098000F34033 /* TouchIDViewController.xib */,
-			);
-			path = TouchID;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +129,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1EC868B21DF081C00F34033 /* LaunchScreen.storyboard in Resources */,
-				A1EC869C21DF098000F34033 /* TouchIDViewController.xib in Resources */,
 				A1EC868821DF081C00F34033 /* Assets.xcassets in Resources */,
 				A1EC868621DF081900F34033 /* Main.storyboard in Resources */,
 			);
@@ -159,7 +142,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1EC868321DF081900F34033 /* ViewController.m in Sources */,
-				A1EC869B21DF098000F34033 /* TouchIDViewController.m in Sources */,
 				A1EC868E21DF081C00F34033 /* main.m in Sources */,
 				A1EC868021DF081900F34033 /* AppDelegate.m in Sources */,
 			);

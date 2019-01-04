@@ -34,18 +34,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gg-uS-okS">
-                                <rect key="frame" x="60" y="113" width="228" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="指纹登录"/>
-                                <connections>
-                                    <action selector="touchIDTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KqE-I0-gN9"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggO-SG-UWg">
                                 <rect key="frame" x="60" y="189" width="228" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="面部识别登录"/>
+                                <state key="normal" title="开始识别"/>
                                 <connections>
                                     <action selector="faceIDTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j7z-Qx-5vl"/>
                                 </connections>
