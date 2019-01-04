@@ -37,8 +37,8 @@
     
     NSError *error = nil;
     
-    if([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthentication error:&error]){
-        [context evaluatePolicy:LAPolicyDeviceOwnerAuthentication localizedReason:@"通过Home键验证已有指纹" reply:^(BOOL success, NSError * _Nullable error) {
+    if([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&error]){//检测设备是否支持TouchID或FaceID验证功能
+        [context evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics localizedReason:@"通过Home键验证已有指纹" reply:^(BOOL success, NSError * _Nullable error) {
             if(success){
                 dispatch_async(dispatch_get_main_queue(), ^{
                     NSLog(@"TouchID验证成功");
@@ -114,7 +114,7 @@
         }];
     }
     else{
-        NSLog(@"当前设备不支持指纹");
+        NSLog(@"当前设备不支持TouchID或FaceID验证");
     }
     
 }
